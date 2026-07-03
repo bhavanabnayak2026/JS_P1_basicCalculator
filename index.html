@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_JS_Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="result" readonly value="0">
+        <div class="buttons">
+            <button class="calText" id="redo" onclick="inputValue('X')">X</button>
+            <button class="calText" id="clear" onclick="inputValue('C')">C</button>
+            <button class="calText" id="modulus" onclick="inputValue('%')">%</button>
+            <button class="orange" onclick="inputValue('/')">/</button>
+
+            <button class="numberText" onclick="inputValue('7')" >7</button>
+            <button class="numberText" onclick="inputValue('8')">8</button>
+            <button class="numberText" onclick="inputValue('9')">9</button>
+            <button class="orange" onclick="inputValue('*')">*</button>
+
+            <button class="numberText" onclick="inputValue('4')" >4</button>
+            <button class="numberText" onclick="inputValue('5')">5</button>
+            <button class="numberText" onclick="inputValue('6')">6</button>
+            <button class="orange" onclick="inputValue('-')">-</button>
+
+            <button class="numberText" onclick="inputValue('1')">1</button>
+            <button class="numberText" onclick="inputValue('2')">2</button>
+            <button class="numberText" onclick="inputValue('3')">3</button>
+            <button class="orange" onclick="inputValue('+')">+</button>
+
+            <button class="numberText" onclick="inputValue('0')">0</button>
+            <button class="numberText" onclick="inputValue('00')">00</button>
+            <button class="numberText" onclick="inputValue('.')">.</button>
+            <button class="orange" id="equal" onclick="inputValue('=')">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
